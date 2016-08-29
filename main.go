@@ -103,7 +103,7 @@ func main() {
 	r.GET("/new", func(c *gin.Context) {
 		container, err := client.CreateContainer(docker.CreateContainerOptions{
 			Config: &docker.Config{
-				Image: "test",
+				Image: "caas",
 			},
 		})
 
